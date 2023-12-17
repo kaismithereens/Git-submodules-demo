@@ -35,3 +35,24 @@ git submodules sync recursive
 git submodule update
 
 with init and recursive flags for an existing repository
+
+#using a command on all submodules
+git submodule foreach 'git reset --hard'
+
+#using a command on all submodules and their submodules
+git submodule foreach --recursive 'git reset --hard'
+
+#initializing submodule configuration
+submodule init
+
+#viewing diff of submodules
+git diff name
+
+git diff --submodule name
+
+#show changes to the file
+git diff --submodule=diff
+
+git submodule --help
+
+
