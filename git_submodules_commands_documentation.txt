@@ -1,0 +1,37 @@
+Forked the Github repository: https://github.com/kaismithereens/Git-submodules-demo
+
+Cloned the repo to my local machine:
+git clone --recursive git@github.com:kaismithereens/Git-submodules-demo.git
+
+#if the repo has any submodules they can be found in .gitmodules file
+cat .gitmodules
+
+#list all submodules
+git submodule
+
+#add a submodule
+git submodule add link
+
+#add a submodule branch
+git submodule add -b new link
+
+#update submodule
+git submodule update --remote 
+
+#pull recursively all the changes from the submodules
+git pull --recurse-submodules
+
+#delete the submodule
+git submodule deinit -f name
+rm -rf -/git/modules/name
+git rm -f name
+
+
+#clone the repo recursively
+git clone --recursive link
+
+git fetch
+git submodules sync recursive
+git submodule update
+
+with init and recursive flags for an existing repository
