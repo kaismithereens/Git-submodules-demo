@@ -55,4 +55,10 @@ git diff --submodule=diff
 
 git submodule --help
 
+#if you cloned the repo without the --recursive flag, use 
+git submodule update --init --recursive
+
+#update submodules
+git submodule update --remote
+
 
